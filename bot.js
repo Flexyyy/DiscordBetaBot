@@ -22,9 +22,9 @@ client.on("message", async msg => {
     }
     if(msg.content.startsWith(`${prefix}creator`)) {
         var embed = new Discord.RichEmbed()
-        .addField("This Bot Has Made By", "<@204988881454497792>")
-        .setColor(3447003)
-        .setFooter("©️Flexyy 2018")
+        .addField("This Bot Is Fully Maded By", "<@204988881454497792>")
+        .setColor('ff0000')
+        .setFooter("©️ Flexyy 2018")
         .setThumbnail(client.user.avatarURL)
         msg.channel.send(embed)
     }  
