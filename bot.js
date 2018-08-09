@@ -16,9 +16,8 @@ client.on("message", async msg => {
     let args = messageArray.slice(1);
 
     if(cmd === `${prefix}ping`){
-        const then = Date.now(); - then
         msg.channel.send(`**Pinging...**`).then(m => {
-            m.edit(`Your Ping is Now: **${Date.now() - then}ms** `)
+            m.edit(`Your Ping is Now: **${client.ping}ms** `)
         });
     }
     if(msg.content.startsWith(`${prefix}creator`)) {
