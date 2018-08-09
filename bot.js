@@ -26,6 +26,7 @@ client.on("message", async msg => {
         .setColor(3447003)
         .setFooter("©️Flexyy 2018")
         .setThumbnail(client.user.avatarURL)
+        msg.channel.send(embed)
     }  
     if(msg.content.startsWith(`${prefix}github`))  {
         msg.channel.send("https://github.com/Flexyyy")
