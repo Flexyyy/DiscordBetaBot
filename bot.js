@@ -36,6 +36,7 @@ client.on("message", async msg => {
         .addField("creator", "I Will told you Who Created Me!")
         .addField("invitelink", "I Will Send Invite Link to Inv me For Discord Servers!")
         .addField("serverlink", "I Will Send My Discord Public Server!")
+        .addField("youtube", "Sent Flexyy's YouTube Channel!")
         .setColor(3447003)
         .setFooter("The Amazing man Who Help me: AniShalev#7444")
         .setThumbnail(client.user.avatarURL)
