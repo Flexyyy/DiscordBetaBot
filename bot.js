@@ -47,6 +47,9 @@ client.on("message", async msg => {
     if(msg.content.startsWith(`${prefix}serverlink`)) {
         msg.channel.send("**My Testing Server:** https://discord.gg/c295HtJ")
     }
+    if(msg.content.startsWith(`${prefix}youtube`)) {
+        msg.channel.send("**Flexyy's YouTube Channel:** https://www.youtube.com/channel/UCgvBS5R8CcLNA_s-6LC_WbA?view_as=subscriber")
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
