@@ -21,7 +21,12 @@ client.on("message", async msg => {
         });
     }
     if(msg.content.startsWith(`${prefix}creator`)) {
-        msg.channel.send("```THIS BOT HAS CREATED BY: Flexyy#3108```")
+        var embed = new Discord.RichEmbed()
+        .addField("This Bot Has Made By", "<@204988881454497792>")
+        .setColor(3447003)
+        .setFooter("The Amazing man Who Help me: AniShalev#7444")
+        .setThumbnail(client.user.avatarURL)
+        msg.author.send(embed);
     }  
     if(msg.content.startsWith(`${prefix}github`))  {
         msg.channel.send("https://github.com/Flexyyy")
