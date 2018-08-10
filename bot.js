@@ -41,6 +41,7 @@ client.on("message", async msg => {
         .addField("invitelink", "I Will Send Invite Link to Inv me For Discord Servers!")
         .addField("serverlink", "I Will Send My Discord Public Server!")
         .addField("youtube", "Sent Flexyy's YouTube Channel!")
+        .addField("avatar", "Sent your AvatarURL"
         .setColor(3447003)
         .setFooter("The Amazing man Who Help me: AniShalev#7444")
         .setThumbnail(client.user.avatarURL)
@@ -55,8 +56,9 @@ client.on("message", async msg => {
     if(msg.content.startsWith(`${prefix}youtube`)) {
         msg.channel.send("**Flexyy's YouTube Channel:** https://www.youtube.com/channel/UCgvBS5R8CcLNA_s-6LC_WbA?view_as=subscriber")
     }
-    if(msg.content.startsWith(`${prefix}avatar`)) {
-        msg.channel.send(`${client.avatarURL}`)
+    if.msg.content.startsWith(`${prefix}avatar`)) {
+        let user = msg.mentions.users.first() || msg.author;
+        msg.channel.send(user.avatarURL)
     }
 });
 
