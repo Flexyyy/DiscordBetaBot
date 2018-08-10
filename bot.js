@@ -55,7 +55,7 @@ client.on("message", async msg => {
         msg.channel.send("**Flexyy's YouTube Channel:** https://www.youtube.com/channel/UCgvBS5R8CcLNA_s-6LC_WbA?view_as=subscriber")
     }
     if(msg.content.startsWith(`${prefix}avatar`)) {
-        let user = msg.mentions.users.first() || msg.author;
+        let user = msg.mentions.users.first() || msg.author
         let output = user.username + `#` + user.discriminator
         var embed = new Discord.RichEmbed()
         .setAuthor(`${output}'s avatar`)
