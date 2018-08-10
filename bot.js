@@ -58,7 +58,13 @@ client.on("message", async msg => {
     }
     if.msg.content.startsWith(`${prefix}avatar`)) {
         let user = msg.mentions.users.first() || msg.author;
-        msg.channel.send(user.displayAvatarURL)
+        let output = user.username + `#` + user.discriminator
+        var embed = new Discord.RichEmbed()
+        .setAuthor(`${output}'s avatar`)
+        .setImage(user.displayAvatarURL)
+        .setColor(3447003)
+        .setFooter(`© 2018 Flexyy`)
+        msg.channel.send(embed)
     }
 });
 
