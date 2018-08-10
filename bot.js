@@ -43,6 +43,7 @@ client.on("message", async msg => {
         .addField("avatar", "Sent your AvatarURL")
         .setColor(3447003)
         .setFooter("The Amazing man Who Help me: AniShalev#7444")
+        .setThumbnail(client.user.avatarURL)
         msg.author.send(embed); 
     }
     if(msg.content.startsWith(`${prefix}invitelink`)) {
