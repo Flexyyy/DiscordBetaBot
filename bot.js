@@ -62,7 +62,7 @@ client.on("message", async msg => {
         var embed = new Discord.RichEmbed()
         .setAuthor(`${output}'s avatar`)
         .setImage(user.displayAvatarURL)
-        .setColor(3447003)
+        .setColor('1bff00')
         .setFooter(`© 2018 Flexyy`)
         msg.channel.send(embed)
     }
