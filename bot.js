@@ -40,7 +40,8 @@ client.on("message", async msg => {
         .addField("invitelink", "I Will Send Invite Link to Inv me For Discord Servers!")
         .addField("serverlink", "I Will Send My Discord Public Server!")
         .addField("youtube", "Sent Flexyy's YouTube Channel!")
-        .addField("avatar", "Sent your AvatarURL")
+        .addField("avatar", "Sent your AvatarURL!")
+        .addField("website", "Sent my Official Website!")
         .setColor(3447003)
         .setFooter("The Amazing man Who Help me: AniShalev#7444")
         .setThumbnail(client.user.avatarURL)
@@ -64,6 +65,9 @@ client.on("message", async msg => {
         .setColor('1bff00')
         .setFooter(`© 2018 Flexyy`)
         msg.channel.send(embed)
+    }
+    if(msg.content.startsWith(`${prefix}website`)) {
+        msg.channel.send("**Here's my Official Website:** https://rapidui.io/live/HiCUXKa4AlmuXJk01457836/")
     }
 });
 
