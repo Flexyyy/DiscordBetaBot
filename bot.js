@@ -35,8 +35,8 @@ client.on("message", async msg => {
         msg.channel.send(":computer: **The commands has Sent to You in DM** :computer:")
         var embed = new Discord.RichEmbed()
         .addField("Prefix", "t.")
-        .addField("GitHub", "Sent Flexyy's GitHub Profile!")
-        .addField("Ping", "I Will told you Your Ping!")
+        .addField("github", "Sent Flexyy's GitHub Profile!")
+        .addField("ping", "I Will told you Your Ping!")
         .addField("creator", "I Will told you Who Created Me!")
         .addField("invitelink", "I Will Send Invite Link to Inv me For Discord Servers!")
         .addField("serverlink", "I Will Send My Discord Public Server!")
@@ -58,7 +58,7 @@ client.on("message", async msg => {
     }
     if.msg.content.startsWith(`${prefix}avatar`)) {
         let user = msg.mentions.users.first() || msg.author;
-        msg.channel.send(user.avatarURL)
+        msg.channel.send(user.displayAvatarURL)
     }
 });
 
