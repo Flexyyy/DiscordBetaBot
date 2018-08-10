@@ -40,7 +40,7 @@ client.on("message", async msg => {
         .addField("invitelink", "I Will Send Invite Link to Inv me For Discord Servers!")
         .addField("serverlink", "I Will Send My Discord Public Server!")
         .addField("youtube", "Sent Flexyy's YouTube Channel!")
-        .addField("avatar", "Sent your AvatarURL"
+        .addField("avatar", "Sent your AvatarURL")
         .setColor(3447003)
         .setFooter("The Amazing man Who Help me: AniShalev#7444")
         msg.author.send(embed); 
