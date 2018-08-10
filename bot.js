@@ -55,6 +55,9 @@ client.on("message", async msg => {
     if(msg.content.startsWith(`${prefix}youtube`)) {
         msg.channel.send("**Flexyy's YouTube Channel:** https://www.youtube.com/channel/UCgvBS5R8CcLNA_s-6LC_WbA?view_as=subscriber")
     }
+    if(msg.content.startsWith(`${prefix}avatar`)) {
+        msg.channel.send("client.avatarURL")
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
