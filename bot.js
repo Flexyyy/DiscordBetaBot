@@ -25,7 +25,6 @@ client.on("message", async msg => {
         .addField("This Bot Is Fully Maded By", "<@204988881454497792>")
         .setColor('ff0000')
         .setFooter("©️ Flexyy 2018")
-        .setThumbnail(client.user.avatarURL)
         msg.channel.send(embed)
     }  
     if(msg.content.startsWith(`${prefix}github`))  {
@@ -44,7 +43,6 @@ client.on("message", async msg => {
         .addField("avatar", "Sent your AvatarURL"
         .setColor(3447003)
         .setFooter("The Amazing man Who Help me: AniShalev#7444")
-        .setThumbnail(client.user.avatarURL)
         msg.author.send(embed); 
     }
     if(msg.content.startsWith(`${prefix}invitelink`)) {
