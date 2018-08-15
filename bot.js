@@ -4,13 +4,13 @@ const client = new Discord.Client();
 client.on("ready", function() {
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
     client.user.setActivity(
-        `Official BETA Bot | t.help`, { type: "STREAMING", url: 'https://www.twitch.tv/txi_flexyy' }
+        `Official BETA Bot | b.help`, { type: "STREAMING", url: 'https://www.twitch.tv/txi_flexyy' }
     );
 });
 
 client.on("message", async msg => {
 
-    let prefix = 't.'
+    let prefix = 'b.'
     let messageArray = msg.content.split(" ");
     let cmd = messageArray[0]
     let args = messageArray.slice(1);
@@ -33,7 +33,7 @@ client.on("message", async msg => {
     if(msg.content.startsWith(`${prefix}help`)) {
         msg.channel.send(":computer: **The commands has Sent to You in DM** :computer:")
         var embed = new Discord.RichEmbed()
-        .addField("Prefix", "t.")
+        .addField("Prefix", "b.")
         .addField("github", "Sent Flexyy's GitHub Profile!")
         .addField("ping", "I Will told you Your Ping!")
         .addField("creator", "I Will told you Who Created Me!")
