@@ -25,6 +25,7 @@ client.on("message", async msg => {
         .addField("This Bot Is Fully Maded By", "<@204988881454497792>")
         .setColor('ff0000')
         .setFooter("©️ Flexyy 2018")
+        .setThumbnail(client.user.<@204988881454497792>)
         msg.channel.send(embed)
     }  
     if(msg.content.startsWith(`${prefix}github`))  {
