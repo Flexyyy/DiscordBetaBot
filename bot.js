@@ -44,7 +44,7 @@ client.on("message", async msg => {
         .addField("avatar", "Sent your AvatarURL!")
         .addField("website", "Sent my Official Website!")
         .setColor(3447003)
-        .setFooter("The Amazing man Who Help me: AniShalev#7444")
+        .setFooter("©️ Flexyy 2018")
         .setThumbnail(client.user.avatarURL)
         msg.author.send(embed); 
     }
@@ -64,7 +64,7 @@ client.on("message", async msg => {
         .setAuthor(`${output}'s avatar`)
         .setImage(user.displayAvatarURL)
         .setColor('1bff00')
-        .setFooter(`© 2018 Flexyy`)
+        .setFooter(`©️ Flexyy 2018`)
         msg.channel.send(embed)
     }
     if(msg.content.startsWith(`${prefix}website`)) {
