@@ -25,7 +25,7 @@ client.on("message", async msg => {
         .addField("This Bot Is Fully Maded By", "<@204988881454497792>")
         .setColor('ff0000')
         .setFooter("©️ Flexyy 2018")
-        .setThumbnail("https://cdn.discordapp.com/attachments/479270357728231424/479346992368189441/b03f06797e76272fcfc2a5c9b64edfbe.png")
+        .setThumbnail(client.user.avatarURL)
         msg.channel.send(embed)
     }  
     if(msg.content.startsWith(`${prefix}github`))  {
