@@ -43,6 +43,7 @@ client.on("message", async msg => {
         .addField("youtube", "Sent Flexyy's YouTube Channel!")
         .addField("avatar", "Sent your AvatarURL!")
         .addField("website", "Sent my Official Website!")
+        .addField("shop", Flexyy's Design Shop")
         .setColor(3447003)
         .setFooter("©️ Flexyy 2018")
         .setThumbnail(client.user.avatarURL)
@@ -50,6 +51,9 @@ client.on("message", async msg => {
     }
     if(msg.content.startsWith(`${prefix}invitelink`)) {
         msg.channel.send("**You Can Invite Me Here:** https://discordapp.com/oauth2/authorize?client_id=477056465169809408&scope=bot&permissions=0")
+    }
+    if(msg.content.startsWith(`${prefix}shop`)) {
+        msg.channel.send("**Flexyy's Design Shop:** http://www.sellfy.com/flexyyshop")
     }
     if(msg.content.startsWith(`${prefix}serverlink`)) {
         msg.channel.send("**My Testing Server:** https://discord.gg/c295HtJ")
