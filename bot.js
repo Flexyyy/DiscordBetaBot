@@ -24,7 +24,7 @@ client.on("message", async msg => {
         var embed = new Discord.RichEmbed()
         .addField("This Bot Is Fully Maded By", "<@204988881454497792>")
         .setColor('ff0000')
-        .setFooter("©️ Flexyy 2018")
+        .setFooter("©️ plexyy 2019")
         .setThumbnail(client.user.avatarURL)
         msg.channel.send(embed)
     }  
@@ -35,17 +35,17 @@ client.on("message", async msg => {
         msg.channel.send(":computer: **The commands has Sent to You in DM** :computer:")
         var embed = new Discord.RichEmbed()
         .addField("Prefix", "b.")
-        .addField("github", "Sent Flexyy's GitHub Profile!")
+        .addField("github", "Sent plexyy's GitHub Profile!")
         .addField("ping", "I Will told you Your Ping!")
         .addField("creator", "I Will told you Who Created Me!")
         .addField("invitelink", "I Will Send Invite Link to Inv me For Discord Servers!")
         .addField("serverlink", "I Will Send My Discord Public Server!")
-        .addField("youtube", "Sent Flexyy's YouTube Channel!")
+        .addField("youtube", "Sent plexyy's YouTube Channel!")
         .addField("avatar", "Sent your AvatarURL!")
         .addField("website", "Sent my Official Website!")
-        .addField("shop", "Flexyy's Design Shop")
+        .addField("shop", "plexyy's Design Shop")
         .setColor(3447003)
-        .setFooter("©️ Flexyy 2018")
+        .setFooter("©️ plexyy 2019")
         .setThumbnail(client.user.avatarURL)
         msg.author.send(embed); 
     }
@@ -53,13 +53,10 @@ client.on("message", async msg => {
         msg.channel.send("**You Can Invite Me Here:** https://discordapp.com/oauth2/authorize?client_id=477056465169809408&scope=bot&permissions=0")
     }
     if(msg.content.startsWith(`${prefix}shop`)) {
-        msg.channel.send("**Flexyy's Design Shop:** http://www.sellfy.com/flexyyshop")
-    }
-    if(msg.content.startsWith(`${prefix}serverlink`)) {
-        msg.channel.send("**My Testing Server:** https://discord.gg/c295HtJ")
+        msg.channel.send("**Flexyy's Design Shop:** http://selly.gg/@plexyy")
     }
     if(msg.content.startsWith(`${prefix}youtube`)) {
-        msg.channel.send("**Flexyy's YouTube Channel:** https://www.youtube.com/channel/UCgvBS5R8CcLNA_s-6LC_WbA?view_as=subscriber")
+        msg.channel.send("**Plexyy's YouTube Channel:** https://www.youtube.com/channel/UCgvBS5R8CcLNA_s-6LC_WbA?view_as=subscriber")
     }
     if(msg.content.startsWith(`${prefix}avatar`)) {
         let user = msg.mentions.users.first() || msg.author
@@ -68,7 +65,7 @@ client.on("message", async msg => {
         .setAuthor(`${output}'s avatar`)
         .setImage(user.displayAvatarURL)
         .setColor('1bff00')
-        .setFooter(`©️ Flexyy 2018`)
+        .setFooter(`©️ plexyy 2019`)
         msg.channel.send(embed)
     }
     if(msg.content.startsWith(`${prefix}website`)) {
