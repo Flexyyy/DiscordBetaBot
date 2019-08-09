@@ -32,7 +32,7 @@ client.on("message", async msg => {
         msg.channel.send("https://github.com/Flexyyy")
     }
     if(msg.content.startsWith(`${prefix}help`)) {
-        msg.channel.send(":computer: **The commands has Sent to You in DM** :computer:")
+        msg.channel.send(":computer: **My helping advice is now on our DM** :computer:")
         var embed = new Discord.RichEmbed()
         .addField("Prefix", "b.")
         .addField("github", "Will send my official github link!")
