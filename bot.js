@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on("ready", function() {
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
     client.user.setActivity(
-        `Official BETA Bot | b.help`, { type: "STREAMING", url: 'https://www.twitch.tv/txi_flexyy' }
+        `Official BETA Bot | b.help`, { type: "STREAMING", url: 'https://www.twitch.tv/plexyyosu' }
     );
 });
 
@@ -22,7 +22,7 @@ client.on("message", async msg => {
     }
     if(msg.content.startsWith(`${prefix}creator`)) {
         var embed = new Discord.RichEmbed()
-        .addField("This Bot Is Fully Maded By", "<@204988881454497792>")
+        .addField("BETA | BOT has been created by", "<@204988881454497792>")
         .setColor('ff0000')
         .setFooter("©️ plexyy 2019")
         .setThumbnail(client.user.avatarURL)
@@ -35,15 +35,15 @@ client.on("message", async msg => {
         msg.channel.send(":computer: **The commands has Sent to You in DM** :computer:")
         var embed = new Discord.RichEmbed()
         .addField("Prefix", "b.")
-        .addField("github", "Sent plexyy's GitHub Profile!")
-        .addField("ping", "I Will told you Your Ping!")
-        .addField("creator", "I Will told you Who Created Me!")
-        .addField("invitelink", "I Will Send Invite Link to Inv me For Discord Servers!")
-        .addField("serverlink", "I Will Send My Discord Public Server!")
-        .addField("youtube", "Sent plexyy's YouTube Channel!")
-        .addField("avatar", "Sent your AvatarURL!")
-        .addField("website", "Sent my Official Website!")
-        .addField("shop", "plexyy's Design Shop")
+        .addField("github", "Will send my official github link!")
+        .addField("ping", "Will told your ping!")
+        .addField("creator", "Will giving the creator's tag!")
+        .addField("invitelink", "Will give you the perm' to invite me!")
+        .addField("serverlink", "NOT WORKING / WIP!")
+        .addField("youtube", "Will send my official YouTube channel!")
+        .addField("avatar", "Will send your discord Profile Picture!")
+        .addField("website", "Will send my old website!")
+        .addField("shop", "Will send my designs shop!")
         .setColor(3447003)
         .setFooter("©️ plexyy 2019")
         .setThumbnail(client.user.avatarURL)
@@ -53,10 +53,10 @@ client.on("message", async msg => {
         msg.channel.send("**You Can Invite Me Here:** https://discordapp.com/oauth2/authorize?client_id=477056465169809408&scope=bot&permissions=0")
     }
     if(msg.content.startsWith(`${prefix}shop`)) {
-        msg.channel.send("**Flexyy's Design Shop:** http://selly.gg/@plexyy")
+        msg.channel.send("**plexyy's Design Shop:** http://selly.gg/@plexyy")
     }
     if(msg.content.startsWith(`${prefix}youtube`)) {
-        msg.channel.send("**Plexyy's YouTube Channel:** https://www.youtube.com/channel/UCgvBS5R8CcLNA_s-6LC_WbA?view_as=subscriber")
+        msg.channel.send("**plexyy's YouTube Channel:** https://www.youtube.com/channel/UCgvBS5R8CcLNA_s-6LC_WbA?view_as=subscriber")
     }
     if(msg.content.startsWith(`${prefix}avatar`)) {
         let user = msg.mentions.users.first() || msg.author
@@ -69,7 +69,7 @@ client.on("message", async msg => {
         msg.channel.send(embed)
     }
     if(msg.content.startsWith(`${prefix}website`)) {
-        msg.channel.send("**Here's my Official Website:** https://rapidui.io/live/HiCUXKa4AlmuXJk01457836/")
+        msg.channel.send("**Here's my old Website:** https://rapidui.io/live/HiCUXKa4AlmuXJk01457836/")
     }
 });
 
